@@ -1,0 +1,15 @@
+        .footer-area
+        {
+            display: block;
+            background: #303030;
+            line-height: 17px;
+            padding: 12px 0;
+            color: #868686;
+            height: 50px;
+            margin: 0 auto;
+            position: relative;
+            width: 100%;
+            min-width: 840px;
+        }
+        
+        

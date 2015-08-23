@@ -1,0 +1,153 @@
+
+.appDealerList
+    {
+        border: 1px solid #CCCCCC;
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 15px;
+        width: 900px;
+    }
+
+table.appDealerListHeader tr td
+    {
+        padding: 5px 5px 0px 10px;
+    }
+table.appDealerListHeader tr td.firstcolumn
+    {
+        width: 20px;
+    }
+table.appDealerListHeader tr td.secondcolumn
+    {
+        text-align: right;
+        width: 50px;
+    }
+table.appDealerListHeader tr td.thirdcolumn
+    {
+        width: 50px;
+    }
+table.appDealerListHeader tr td.fourthcolumn
+    {
+        text-align: left;
+        width: 50px;
+    }
+table.appDealerListHeader tr td.fifthcolumn
+    {
+        text-align: left;
+        width: 50px;
+    }
+    
+/* tables */
+.appDealerlistSortable {
+        border-collapse: collapse;
+        border: 1px solid #CCCCCC;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	text-align: left;
+        width: 100%;
+}
+.appDealerlistSortable thead tr th, .appDealerlistSortable tfoot tr th {
+	background-color: #e6EEEE;
+	font-size: 8pt;
+	padding: 4px;
+}
+.appDealerlistSortable thead tr .header {
+	background-image: url(../../../../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+.appDealerlistSortable tbody td {
+	color: #3D3D3D;
+	padding: 4px;	
+        border: 1px solid #CCCCCC;
+	vertical-align: top;
+}
+.appDealerlistSortable tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+.appDealerlistSortable thead tr .headerSortUp {
+	background-image: url(../../../../images/asc.gif);
+}
+.appDealerlistSortable thead tr .headerSortDown {
+	background-image: url(../../../../images/desc.gif);
+}
+.appDealerlistSortable thead tr .headerSortDown, table.appDealerlistSortable thead tr .headerSortUp {
+        background-color: #8dbdd8;
+}
+
+
+#appDealerDetails
+    {
+        border: 1px solid #CCCCCC;
+        border-radius: 20px 20px 20px 20px;
+        width: 680px;
+    }
+    
+table.appDealerDetailsHeader
+    {
+        border-collapse: collapse;
+	margin:5% 0pt 5%;
+	font-size: 9pt;
+	text-align: left;
+        width: 90%;
+    }
+#header
+    {
+        
+    }
+    
+table.appDealerDetailsHeader td {
+	color: #3D3D3D;
+	padding: 4px;	
+        border: 1px solid #CCCCCC;
+	vertical-align: top;
+}
+    
+table.appDealerDetailsHeader tr td.firstcolumn
+    {
+        width: 300px;
+        font-weight: bold;
+        
+    }
+
+table.appDealerDetailsHeader tr td.secondcolumn
+    {
+        width: 300px;
+    }
+    
+#parentDealer
+    {
+        border: 1px solid #CCCCCC;
+        border-radius: 20px 20px 20px 20px;
+        width: 450px;
+    }
+
+  
+table.tblParentDealer tr td.firstcolumn
+{
+    font-weight: bold;
+}
+.cmbParentDealerId
+{
+    width: 200px;
+    height: 22px;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 2px;
+    font-size: 13px;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-weight: normal;
+    line-height: 13px;
+}
+
+.cmbParentDealerId:focus
+{
+    border-color:rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
+    outline:0;
+    outline:thin dotted \9;
+}

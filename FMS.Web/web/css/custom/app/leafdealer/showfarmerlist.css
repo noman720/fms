@@ -1,0 +1,105 @@
+.reportheading
+    {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+          
+.required
+{
+    color: #FF0000;
+}
+.details
+{
+    color: #15c;
+}
+
+a.details:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.farmerList
+    {
+        border: 1px solid #CCCCCC;
+        margin-top: 20px;
+        border-radius: 20px 20px 20px 20px;
+        width: 90%;
+    }
+ 
+    
+/*table*/    
+.farmertable {
+        border-collapse: collapse;
+        border: 1px solid #CCCCCC;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	text-align: left;
+        width: 100%;
+}
+.farmertable thead tr th, .farmertable tfoot tr th {
+	background-color: #e6EEEE;
+	font-size: 8pt;
+	padding: 4px;
+}
+.farmertable thead tr .header {
+	background-image: url(../../../../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+.farmertable tbody td {
+	color: #3D3D3D;
+	padding: 4px;	
+        border: 1px solid #CCCCCC;
+	vertical-align: top;
+}
+.farmertable tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+.farmertable thead tr .headerSortUp {
+	background-image: url(../../../../images/asc.gif);
+}
+.farmertable thead tr .headerSortDown {
+	background-image: url(../../../../images/desc.gif);
+}
+.farmertable thead tr .headerSortDown, table.farmertable thead tr .headerSortUp {
+        background-color: #8dbdd8;
+}
+
+
+/*detail modal*/
+#FarmerDetails
+    {
+        border: 1px solid #CCCCCC;
+        border-radius: 20px 20px 20px 20px;
+        width: 680px;
+        background-color: #F0F0F6;
+    }
+table.FarmerDetailsTable{
+        border-collapse: collapse;
+	margin:5% 0pt 5%;
+	font-size: 9pt;
+	text-align: left;
+        width: 90%;
+    }
+    
+table.FarmerDetailsTable td {
+	color: #3D3D3D;
+	padding: 4px;	
+        border: 1px solid #CCCCCC;
+	vertical-align: top;
+}
+    
+table.FarmerDetailsTable tr td.firstcolumn
+    {
+        width: 300px;
+        font-weight: bold;
+        
+    }
+
+table.FarmerDetailsTable tr td.secondcolumn
+    {
+        width: 300px;
+    }

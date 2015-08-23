@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+    <struts>
+        
+	<package extends="base-struts" name="author-struts" namespace="/">
+
+            <action name="authorhome" class="com.csbl.fms.action.AppMenuAction" method="checkAuthor">
+                <result name="success" type="tiles">/authorhome.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="dealerselection" class="com.csbl.fms.action.AppMenuAction" method="checkAuthor">
+                <result name="success" type="tiles">/dealerselection.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="cropsentry" class="com.csbl.fms.action.AppMenuAction" method="checkAuthor">
+                <result name="success" type="tiles">/cropsentry.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="fertilizerentry" class="com.csbl.fms.action.AppMenuAction" method="checkAuthor">
+                <result name="success" type="tiles">/fertilizerentry.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="fertilizer-recommendation" class="com.csbl.fms.action.AppMenuAction" method="checkAuthor">
+                <result name="success" type="tiles">/fertilizer-recommendation.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="final-allotment-report" class="com.csbl.fms.action.AppMenuAction" method="checkAuthor">
+                <result name="success" type="tiles">/final-allotment-report.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="final-allotment-transaction" class="com.csbl.fms.action.AppMenuAction" method="checkAuthor">
+                <result name="success" type="tiles">/final-allotment-transaction.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+           
+            <action name="author-underconstruction" class="com.csbl.fms.action.AppMenuAction" method="checkAuthor">
+                <result name="success" type="tiles">/author-underconstruction.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+           
+	</package>
+        
+    </struts>

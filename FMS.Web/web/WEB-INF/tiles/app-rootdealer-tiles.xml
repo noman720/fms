@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+   
+    <!-- Application -->
+    <definition name="appRDBaseLayout" template="/WEB-INF/app/rootdealer/layout/baselayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/app/rootdealer/layout/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/app/rootdealer/rootdealermenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/app/rootdealer/layout/footer.jsp" />
+    </definition>
+    
+    <definition name="/rootdealerhome.tiles" extends="appRDBaseLayout">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="body" value="/WEB-INF/app/rootdealer/layout/home.jsp" />
+    </definition>
+        
+    <definition name="/dealerlist.tiles" extends="appRDBaseLayout">
+        <put-attribute name="title" value="Dealer List" />
+        <put-attribute name="body" value="/WEB-INF/app/rootdealer/pages/dealerlist.jsp" />
+    </definition>
+    
+    <definition name="/dealer-transaction.tiles" extends="appRDBaseLayout">
+        <put-attribute name="title" value="Transaction" />
+        <put-attribute name="body" value="/WEB-INF/app/rootdealer/pages/transaction.jsp" />
+    </definition>
+    
+    <definition name="/dealer-transaction-report.tiles" extends="appRDBaseLayout">
+        <put-attribute name="title" value="Transactio Report" />
+        <put-attribute name="body" value="/WEB-INF/app/rootdealer/pages/allotmentreport.jsp" />
+    </definition>
+
+    <definition name="/root-underconstruction.tiles" extends="appRDBaseLayout">
+        <put-attribute name="title" value="Underconstruction" />
+        <put-attribute name="body" value="/WEB-INF/app/rootdealer/pages/underconstruction.jsp" />
+    </definition>
+
+</tiles-definitions>

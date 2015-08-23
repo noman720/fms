@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+        <!-- Bean Classes -->
+        <bean id="appContext" class="com.app.dal.util.ApplicationContextProvider"/>
+        <bean id="userBean" class="com.csbl.fms.spring.bean.UserBean"/>
+        <bean id="beanConverter" class="com.csbl.fms.converter.BeanToEntityConverter"/>
+        <bean id="entityConverter" class="com.csbl.fms.converter.EntityToBeanConverter"/>
+        
+        <!-- Util Classes -->
+        <bean id="idService" class="com.csbl.fms.service.impl.FmsIdServiceImpl"/>
+        <bean id="dbUtil" class="com.csbl.fms.util.DBUtil"/>
+        <bean id="dataTableJsonUtil" class="com.csbl.fms.util.DataTableJsonUtil"/>
+        <bean id="dataTablesParamUtility" class="com.csbl.fms.util.DataTablesUtil"/>
+
+        <!-- Dao Classes -->
+        <bean id="simpleJdbcDao" class="com.app.dal.spring.dao.impl.SimpleJdbcDaoImpl">
+            <property name="dataSource"                 ref="dataSource" />
+        </bean>
+        
+        <bean id="springJdbcDao" class="com.app.dal.spring.dao.impl.SpringJdbcDaoImpl">
+            <property name="dataSource"                 ref="dataSource" />
+        </bean>
+        
+        <!--
+        <bean id="hibernateDao" class="com.app.dal.hibernate.dao.impl.HibernateDaoImpl">
+            <property name="sessionFactory"             ref="sessionFactory" />
+        </bean>
+        -->
+        
+        
+        <!-- Manager Classes -->
+        <bean id="queryManager" class="com.csbl.fms.service.impl.MySqlQueryManagerImpl"/>
+        <!--<bean id="queryManager" class="com.tjc.school.service.impl.OracleQueryManagerImpl"/>-->
+        <bean id="sessionManager" class="com.csbl.fms.manager.impl.SessionServiceImpl"/>
+        
+        <bean id="manager" class="com.csbl.fms.manager.impl.ManagerImpl">
+            <property name="dataSource"                     ref="dataSource" />
+            <property name="dbUtil"                         ref="dbUtil" />
+            <property name="dataTablesParamUtility"         ref="dataTablesParamUtility" />
+            <property name="springJdbcDao"                  ref="springJdbcDao" />
+            <property name="simpleJdbcDao"                  ref="simpleJdbcDao" />
+            <!--<property name="hibernateDao"                   ref="hibernateDao" /> -->
+            <property name="idService"                      ref="idService" />
+            <property name="dataTableJsonUtil"              ref="dataTableJsonUtil" />
+            <property name="entityConverter"                ref="entityConverter" />
+            <property name="queryManager"                   ref="queryManager" />
+            <property name="sessionManager"                 ref="sessionManager" />
+        </bean>
+    
+        <bean id="loginManager" class="com.csbl.fms.manager.impl.LoginManagerImpl" parent="manager"></bean>
+   	
+        <!--    
+        <bean id="userManager" class="com.csbl.fms.manager.impl.UserManagerImpl" parent="manager"></bean>
+        -->
+        
+        <bean id="seasionManager" class="com.csbl.fms.manager.impl.SeasionManagerImpl" parent="manager"></bean>
+        <bean id="postCodeManager" class="com.csbl.fms.manager.impl.PostCodeManagerImpl" parent="manager"></bean>
+        <bean id="cropsManager" class="com.csbl.fms.manager.impl.CropsManagerImpl" parent="manager"></bean>
+        <bean id="fertilizerManager" class="com.csbl.fms.manager.impl.FertilizerManagerImpl" parent="manager"></bean>
+        <bean id="registrationManager" class="com.csbl.fms.manager.impl.RegistrationManagerImpl" parent="manager">
+            <property name="postCodeManager"                ref="postCodeManager"/>
+        </bean>
+        <bean id="dealerManager" class="com.csbl.fms.manager.impl.DealerManagerImpl" parent="manager"></bean>
+        <bean id="farmerManager" class="com.csbl.fms.manager.impl.FarmerManagerImpl" parent="manager"></bean>
+        
+        <bean id="recommendationManager" class="com.csbl.fms.manager.impl.RecommendationManagerImpl" parent="manager">
+            <property name="postCodeManager"                ref="postCodeManager"/>
+            <property name="cropsManager"                   ref="cropsManager"/>
+            <property name="fertilizerManager"              ref="fertilizerManager"/>
+        </bean>
+        
+        <bean id="fertilizerAppManager" class="com.csbl.fms.manager.impl.FertilizerAppManagerImpl" parent="manager">
+            <property name="farmerManager"                  ref="farmerManager"/>
+            <property name="dealerManager"                  ref="dealerManager"/>
+            <property name="seasionManager"                 ref="seasionManager"/>
+            <property name="cropsManager"                   ref="cropsManager"/>
+            <property name="fertilizerManager"              ref="fertilizerManager"/>
+        </bean>
+        
+
+
+        <!-- Action Classes -->
+        <bean id="action" class="com.csbl.fms.action.AbstractionAction">
+            <property name="sessionManager"                 ref="sessionManager" />
+	</bean>
+        
+        <bean id="loginAction" class="com.csbl.fms.action.LoginAction" parent="action">
+            <property name="loginManager"                   ref="loginManager" />
+            <property name="userBean"                       ref="userBean" />
+	</bean>
+
+</beans>

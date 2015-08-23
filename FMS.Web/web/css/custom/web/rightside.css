@@ -1,0 +1,44 @@
+
+    .latestnews
+    {
+        width: 200px;
+        height: 300px;
+        margin: 5px 0px 10px 0px;
+        overflow-x: hidden;
+        border: 2px solid #F0F0ED;
+        border-radius: 5px;
+        
+    }
+    .headernews
+    {
+        background-color: #F0F0ED;
+        font-size: 14px;
+        padding: 11px 15px;
+        margin-bottom: 0;
+        font-weight: bold;
+        color: #7c7c7a;
+    }
+    ul.newslist
+    {
+        list-style-type: none;
+        text-align: left;
+        margin-left: 10px;
+        color: #7c7c7a;
+    }
+    
+    ul.newslist li
+    {
+        padding: 5px 0px;
+        font-size: 11px;
+    }
+    .newslistmouseover
+    {
+        text-decoration: underline;
+        cursor: pointer;
+        color: #0093f0;
+    }
+    .newslistmouseout
+    {
+        
+    }
+    

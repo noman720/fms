@@ -1,0 +1,60 @@
+
+    *
+    {
+        margin: 0;
+        padding: 0;
+    }
+    html,body
+    {
+        font-family: verdana,helvetica,arial,sans-serif;
+        font-size: 12px;
+        color: #000000;
+    }
+    div
+    {
+        display: block;
+    }
+    .roottable
+    {
+        /*border : 1px solid #555;*/
+        min-width : 850px;
+        border-collapse: collapse;
+    }
+    .roottable tr td
+    {
+        /*border : 1px solid #555;*/
+    }
+    .roottable tr td.extracolumn
+    {
+        width: 117px;
+    }
+    html:-webkit-scrollbar
+    {
+        width:10px;
+        height:10px;
+        background-color:#fff;
+        box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset -1px -1px 0 rgba(0,0,0,.07);
+    }
+    html:-webkit-scrollbar:hover
+    {
+        background-color:#eee;
+    }
+    html:-webkit-resizer
+    {
+        -webkit-border-radius:4px;
+        background-color:#666;
+    }
+    html:-webkit-scrollbar-thumb
+    {
+        min-height:0.8em;
+        min-width:0.8em;
+        background-color: rgba(0, 0, 0, .2);
+        box-shadow: inset 1px 1px 0 rgba(0,0,0,.1),inset -1px -1px 0 rgba(0,0,0,.07);
+    }
+    html:-webkit-scrollbar-thumb:hover{
+        background-color: #bbb;
+    }
+    html:-webkit-scrollbar-thumb:active
+    {
+        background-color:#888;
+    }

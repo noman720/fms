@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+   
+    <!-- Application -->
+    <definition name="appLDBaseLayout" template="/WEB-INF/app/leafdealer/layout/baselayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/app/leafdealer/layout/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/app/leafdealer/leafdealermenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/app/leafdealer/layout/footer.jsp" />
+    </definition>
+    
+    <definition name="/leafdealerhome.tiles" extends="appLDBaseLayout">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="body" value="/WEB-INF/app/leafdealer/layout/home.jsp" />
+    </definition>
+    
+    <definition name="/farmerregistration.tiles" extends="appLDBaseLayout">
+        <put-attribute name="title" value="Farmer Registration" />
+        <put-attribute name="body" value="/WEB-INF/app/leafdealer/pages/farmerregistration.jsp" />
+    </definition>  
+      
+    <definition name="/farmerlist.tiles" extends="appLDBaseLayout">
+        <put-attribute name="title" value="Farmer List" />
+        <put-attribute name="body" value="/WEB-INF/app/leafdealer/pages/farmerlist.jsp" />
+    </definition>  
+    
+    <definition name="/fertilizer-application.tiles" extends="appLDBaseLayout">
+        <put-attribute name="title" value="Fertilizer Application" />
+        <put-attribute name="body" value="/WEB-INF/app/leafdealer/pages/fertilizerapplication.jsp" />
+    </definition>
+    <definition name="/farmer-allotmentreport.tiles" extends="appLDBaseLayout">
+        <put-attribute name="title" value="Allotment Report" />
+        <put-attribute name="body" value="/WEB-INF/app/leafdealer/pages/allotmentreport.jsp" />
+    </definition>
+    <definition name="/farmer-transaction.tiles" extends="appLDBaseLayout">
+        <put-attribute name="title" value="Transaction" />
+        <put-attribute name="body" value="/WEB-INF/app/leafdealer/pages/transaction.jsp" />
+    </definition>
+
+    <definition name="/leaf-underconstruction.tiles" extends="appLDBaseLayout">
+        <put-attribute name="title" value="Underconstruction" />
+        <put-attribute name="body" value="/WEB-INF/app/leafdealer/pages/underconstruction.jsp" />
+    </definition>
+
+</tiles-definitions>

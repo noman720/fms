@@ -1,0 +1,104 @@
+/* tables */
+
+
+table.fertilizerallotmentdatatable {
+        margin: 0 auto;
+        padding-top: 15px;
+	clear: both;
+	width: 100%;
+	min-width: 800px;
+	font: 12px/16px "Tahoma", "Verdana", "Arial", sans-serif;
+	color: #555555;
+	border-collapse: collapse;
+	border: 1px solid #DDDDDD;
+}
+table.fertilizerallotmentdatatable thead tr th, fertilizerallotmentdatatable tfoot tr th {
+	background-color: #e6EEEE;
+	font-size: 8pt;
+	padding: 4px;
+}
+table.fertilizerallotmentdatatable thead tr .header {
+	background-image: url(../../../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.fertilizerallotmentdatatable tbody td {
+	color: #3D3D3D;
+	padding: 4px;	
+        border: 1px solid #CCCCCC;
+	vertical-align: top;
+}
+table.fertilizerallotmentdatatable tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+table.fertilizerallotmentdatatable thead tr .headerSortUp {
+	background-image: url(../../../images/asc.gif);
+}
+table.fertilizerallotmentdatatable thead tr .headerSortDown {
+	background-image: url(../../../images/desc.gif);
+}
+table.fertilizerallotmentdatatable thead tr .headerSortDown, table.fertilizerallotmentdatatable thead tr .headerSortUp {
+        background-color: #8dbdd8;
+}
+
+
+#fertilizerAllotmentForm
+    {
+        border: 1px solid #CCCCCC;
+        border-radius: 10px 10px 10px 10px;
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+.reportheading
+    {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    
+    
+.fertilizerallotmenttoolbar
+{
+    color: #3E576F;
+    margin: 15px 10px;
+}
+
+.fertilizerallotmenttoolbar tr td
+{
+    padding: 1px 0px 5px 7px;
+}
+
+.amount
+{
+    width: 200px;
+    height: 22px;
+    margin-left: 10px;
+    display: inline-block;
+    padding: 2px;
+    font-size: 13px;
+    border: 1px solid #cccccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    font-weight: normal;
+    line-height: 13px;
+    
+}
+
+
+#crops-select:focus, #farmer-select:focus, #fertilizer-select:focus, #postcode-select:focus, .amount:focus
+{
+    border-color:rgba(82, 168, 236, 0.8);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, 0.075),0 0 8px rgba(82, 168, 236, 0.6);
+    outline:0;
+    outline:thin dotted \9;
+}
+
+.required
+{
+    color: red;
+}

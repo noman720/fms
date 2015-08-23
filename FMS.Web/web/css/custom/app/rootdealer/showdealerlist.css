@@ -1,0 +1,105 @@
+.reportheading
+    {
+        font-size: 14px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+          
+.required
+{
+    color: #FF0000;
+}
+.details
+{
+    color: #15c;
+}
+
+a.details:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.dealerList
+    {
+        border: 1px solid #CCCCCC;
+        margin-top: 20px;
+        border-radius: 20px 20px 20px 20px;
+        width: 90%;
+    }
+ 
+    
+/*table*/    
+.dealertable {
+        border-collapse: collapse;
+        border: 1px solid #CCCCCC;
+	margin:10px 0pt 15px;
+	font-size: 8pt;
+	text-align: left;
+        width: 100%;
+}
+.dealertable thead tr th, .dealertable tfoot tr th {
+	background-color: #e6EEEE;
+	font-size: 8pt;
+	padding: 4px;
+}
+.dealertable thead tr .header {
+	background-image: url(../../../../images/bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+.dealertable tbody td {
+	color: #3D3D3D;
+	padding: 4px;	
+        border: 1px solid #CCCCCC;
+	vertical-align: top;
+}
+.dealertable tbody tr.odd td {
+	background-color:#F0F0F6;
+}
+.dealertable thead tr .headerSortUp {
+	background-image: url(../../../../images/asc.gif);
+}
+.dealertable thead tr .headerSortDown {
+	background-image: url(../../../../images/desc.gif);
+}
+.dealertable thead tr .headerSortDown, table.dealertable thead tr .headerSortUp {
+        background-color: #8dbdd8;
+}
+
+
+/*detail modal*/
+#DealerDetails
+    {
+        border: 1px solid #CCCCCC;
+        border-radius: 20px 20px 20px 20px;
+        width: 680px;
+        background-color: #f0f0f0;
+    }
+table.DealerDetailsTable{
+        border-collapse: collapse;
+	margin:5% 0pt 5%;
+	font-size: 9pt;
+	text-align: left;
+        width: 90%;
+    }
+    
+table.DealerDetailsTable td {
+	color: #3D3D3D;
+	padding: 4px;	
+        border: 1px solid #CCCCCC;
+	vertical-align: top;
+}
+    
+table.DealerDetailsTable tr td.firstcolumn
+    {
+        width: 300px;
+        font-weight: bold;
+        
+    }
+
+table.DealerDetailsTable tr td.secondcolumn
+    {
+        width: 300px;
+    }

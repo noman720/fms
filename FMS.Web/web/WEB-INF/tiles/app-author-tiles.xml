@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+   
+    <!-- Application -->
+    <definition name="appAuthorBaseLayout" template="/WEB-INF/app/author/layout/baselayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/app/author/layout/header.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/app/author/authormenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/app/author/layout/footer.jsp" />
+    </definition>
+    
+    <definition name="/authorhome.tiles" extends="appAuthorBaseLayout">
+        <put-attribute name="title" value="Home" />
+        <put-attribute name="body" value="/WEB-INF/app/author/layout/home.jsp" />
+    </definition>
+    
+    <definition name="/dealerselection.tiles" extends="appAuthorBaseLayout">
+        <put-attribute name="title" value="Dealer Selection" />
+        <put-attribute name="body" value="/WEB-INF/app/author/pages/dealerselection.jsp" />
+    </definition>
+
+    <definition name="/cropsentry.tiles" extends="appAuthorBaseLayout">
+        <put-attribute name="title" value="Crops Entry" />
+        <put-attribute name="body" value="/WEB-INF/app/author/pages/cropsentry.jsp" />
+    </definition>
+    
+    <definition name="/fertilizerentry.tiles" extends="appAuthorBaseLayout">
+        <put-attribute name="title" value="Fertilizer Entry" />
+        <put-attribute name="body" value="/WEB-INF/app/author/pages/fertilizerentry.jsp" />
+    </definition>
+    
+    <definition name="/fertilizer-recommendation.tiles" extends="appAuthorBaseLayout">
+        <put-attribute name="title" value="Fertilizer Recommendation" />
+        <put-attribute name="body" value="/WEB-INF/app/author/pages/recommendation.jsp" />
+    </definition>
+    
+    <definition name="/final-allotment-report.tiles" extends="appAuthorBaseLayout">
+        <put-attribute name="title" value="Final Allotment Report" />
+        <put-attribute name="body" value="/WEB-INF/app/author/pages/allotmentreport.jsp" />
+    </definition>
+    
+    <definition name="/final-allotment-transaction.tiles" extends="appAuthorBaseLayout">
+        <put-attribute name="title" value="Transaction" />
+        <put-attribute name="body" value="/WEB-INF/app/author/pages/transaction.jsp" />
+    </definition>
+    
+    <definition name="/author-underconstruction.tiles" extends="appAuthorBaseLayout">
+        <put-attribute name="title" value="Underconstruction" />
+        <put-attribute name="body" value="/WEB-INF/app/author/pages/underconstruction.jsp" />
+    </definition>
+    
+    
+        
+</tiles-definitions>

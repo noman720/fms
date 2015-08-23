@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+    <struts>
+        
+	<package extends="base-struts" name="leafdealer-struts" namespace="/">
+
+            <action name="leafdealerhome" class="com.csbl.fms.action.AppMenuAction" method="checkLeafDealer">
+                <result name="success" type="tiles">/leafdealerhome.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="farmerregistration" class="com.csbl.fms.action.AppMenuAction" method="checkLeafDealer">
+                <result name="success" type="tiles">/farmerregistration.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            <action name="farmerlist" class="com.csbl.fms.action.AppMenuAction" method="checkLeafDealer">
+                <result name="success" type="tiles">/farmerlist.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            <action name="fertilizer-application" class="com.csbl.fms.action.AppMenuAction" method="checkLeafDealer">
+                <result name="success" type="tiles">/fertilizer-application.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            <action name="farmer-allotmentreport" class="com.csbl.fms.action.AppMenuAction" method="checkLeafDealer">
+                <result name="success" type="tiles">/farmer-allotmentreport.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="farmer-transaction" class="com.csbl.fms.action.AppMenuAction" method="checkLeafDealer">
+                <result name="success" type="tiles">/farmer-transaction.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="leaf-underconstruction" class="com.csbl.fms.action.AppMenuAction" method="checkLeafDealer">
+                <result name="success" type="tiles">/leaf-underconstruction.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+	</package>
+        
+    </struts>

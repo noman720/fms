@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+    <struts>
+        <package extends="base-struts" name="web-struts">
+            <action name="home">
+                <result name="login" type="tiles">/web.tiles</result>
+                <result name="success" type="tiles">/web.tiles</result>
+            </action>
+            <action name="dealerApplication"><result name="login" type="tiles">/dealerApplication.tiles</result></action>
+            <action name="contacts"><result name="login" type="tiles">/contacts.tiles</result></action>
+            <action name="loginform"><result name="login" type="tiles">/loginform.tiles</result></action>
+            <action name="underconstruction"><result name="login" type="tiles">/underconstruction.tiles</result></action>
+            <action name="fms"><result name="login" type="tiles">/fms.tiles</result></action>
+        </package>
+        
+    </struts>

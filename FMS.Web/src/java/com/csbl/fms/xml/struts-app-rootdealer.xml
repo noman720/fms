@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+    <struts>
+        
+	<package extends="base-struts" name="rootdealer-struts" namespace="/">
+
+            <action name="rootdealerhome" class="com.csbl.fms.action.AppMenuAction" method="checkRootDealer">
+                <result name="success" type="tiles">/rootdealerhome.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="dealerList" class="com.csbl.fms.action.AppMenuAction" method="checkRootDealer">
+                <result name="success" type="tiles">/dealerlist.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="dealer-transaction" class="com.csbl.fms.action.AppMenuAction" method="checkRootDealer">
+                <result name="success" type="tiles">/dealer-transaction.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="dealer-transaction-report" class="com.csbl.fms.action.AppMenuAction" method="checkRootDealer">
+                <result name="success" type="tiles">/dealer-transaction-report.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="root-underconstruction" class="com.csbl.fms.action.AppMenuAction" method="checkRootDealer">
+                <result name="success" type="tiles">/root-underconstruction.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+	</package>
+        
+    </struts>

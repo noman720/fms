@@ -1,0 +1,35 @@
+    .aboutschool
+    {
+        width: 99%;
+        height: 300px;
+        margin: 5px 0px 10px 0px;
+        overflow-x: hidden;
+        border: 2px solid #F0F0ED;
+        border-radius: 5px;
+    }
+    .headerabout
+    {
+        background-color: #F0F0ED;
+        font-size: 14px;
+        padding: 11px 15px;
+        margin-bottom: 0;
+        font-weight: bold;
+        text-align: left;
+        color: #7c7c7a;
+    }
+    table.historytable tr td
+    {
+        padding-top: 10px;
+        padding-left: 2px;
+    }
+    table.historytable tr td div
+    {
+        font-size: 11px;
+        color : #7c7c7a;
+        line-height: 17px;
+        text-align: justify;
+    }
+    .historyimage
+    {
+        border: solid 1px #555555;
+    }

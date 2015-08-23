@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+   
+    <definition name="appBaseLayout" template="/WEB-INF/app/layout/baselayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/app/layout/header.jsp" />
+        <put-attribute name="menu" value="/appmenu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/WEB-INF/app/layout/footer.jsp" />
+    </definition>
+    
+
+    <definition name="/dealerregistration.tiles" extends="appBaseLayout">
+        <put-attribute name="title" value="Dealer Registration" />
+        <put-attribute name="body" value="/WEB-INF/app/pages/registration/dealerregistration.jsp" />
+    </definition>
+    
+    
+
+    <definition name="/dealerlist.tiles" extends="appBaseLayout">
+        <put-attribute name="title" value="Dealer List" />
+        <put-attribute name="body" value="/WEB-INF/app/pages/dealer/showdealerlist.jsp" />
+    </definition>
+    <definition name="/fetilizerAllotment.tiles" extends="appBaseLayout">
+        <put-attribute name="title" value="Fertilizer Allotment" />
+        <put-attribute name="body" value="/WEB-INF/app/pages/farmer/fertilizerallotment.jsp" />
+<!--        <put-attribute name="body" value="/WEB-INF/app/pages/test.jsp" />-->
+    </definition>
+    <definition name="/appunderconstruction.tiles" extends="appBaseLayout">
+        <put-attribute name="title" value="Underconstruction" />
+        <put-attribute name="body" value="/WEB-INF/app/underconstruction.jsp" />
+    </definition>    
+    <!--
+    <include file="/WEB-INF/tiles/app-author-tiles.xml" />
+    <include file="/WEB-INF/tiles/app-leafdealer-tiles.xml" />
+    <include file="/WEB-INF/tiles/app-rootdealer-tiles.xml" />
+    -->
+</tiles-definitions>

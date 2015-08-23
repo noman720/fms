@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+    <struts>
+        
+	<package extends="base-struts" name="user-struts" namespace="/">
+
+            <action name="login" class="com.csbl.fms.action.LoginAction" method="login">
+                <result name="Admin" type="tiles">/authorhome.tiles</result>
+                <result name="rootdealer" type="tiles">/rootdealerhome.tiles</result>
+                <result name="leafdealer" type="tiles">/leafdealerhome.tiles</result>
+                <result name="fail" type="tiles">/loginform.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+
+            <action name="logout" class="com.csbl.fms.action.LoginAction" method="logout">
+                <result name="success" type="tiles">/loginform.tiles</result>
+            </action>
+
+            <action name="dealerregistrationform" class="com.csbl.fms.action.AppMenuAction" method="dealerregistrationform">
+                <result name="success" type="tiles">/dealerregistration.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            <action name="dealerregistration" class="com.csbl.fms.action.RegistrationAction" method="dealerRegistration">
+                <result name="success" type="tiles">/dealerregistration.tiles</result>
+                <result name="fail" type="tiles">/dealerregistration.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            <action name="farmerregistrationform" class="com.csbl.fms.action.AppMenuAction" method="farmerregistrationform">
+                <result name="success" type="tiles">/farmerregistration.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="dealerlist" class="com.csbl.fms.action.AppMenuAction" method="dealerList">
+                <result name="success" type="tiles">/dealerlist.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            <action name="fetilizerAllotment" class="com.csbl.fms.action.AppMenuAction" method="fetilizerAllotment">
+                <result name="success" type="tiles">/fetilizerAllotment.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            
+            <action name="appunderconstruction" class="com.csbl.fms.action.AppMenuAction" method="appUnderconstruction">
+                <result name="success" type="tiles">/appunderconstruction.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            <!--
+            <action name="dealerselection" class="com.csbl.fms.action.AppMenuAction" method="dealerselection">
+                <result name="Admin" type="tiles">/dealerselection.tiles</result>
+                <result name="login" type="tiles">/loginform.tiles</result>
+            </action>
+            -->
+
+	</package>
+        
+    </struts>
